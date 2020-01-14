@@ -12,7 +12,7 @@ import SwiftUI
 
 // MARK:- Image
 
-extension Image {
+public extension Image {
     
     init(symbol: SFSymbol) {
         self.init(systemName: symbol.rawValue)
