@@ -1,15 +1,21 @@
 import XCTest
+import SwiftUI
 @testable import SFSymbols
 
 final class SFSymbolsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(SFSymbols().text, "Hello, World!")
+    
+    // Assert there are > 1,500 symbols
+    func testAllCases() {
+        XCTAssertTrue(SFSymbol.allCases.count >= 1_500)
     }
-
+    
+    // Assert can create an image
+    func testImage() {
+        XCTAssertNotNil(Image(symbol: SFSymbol.houseFill))
+    }
+    
     static var allTests = [
-        ("testExample", testExample),
+        ("testAllCases", testAllCases),
+        ("testImage", testImage),
     ]
 }
