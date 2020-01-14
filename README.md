@@ -69,3 +69,5 @@ python SFSymbols.py
 
 ## Read More 
 Here are two articles about this library. The first is why it was created and the second is how. 
+1. [A Better Way to Use SF Symbols](https://medium.com/@josephbergman/a-better-way-to-use-sf-symbols-237fabdf381)
+2. [Creating an SFSymbols Library](https://medium.com/@josephbergman/creating-an-sf-symbols-library-2fbec8ba8dd1)
